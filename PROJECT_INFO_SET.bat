@@ -58,7 +58,7 @@ set Javac_Encode=UTF-8
 :: (/) 設置javac編譯時的SDK版本 (/)
 set JavacSDK_Ver=1.6
 :: (*) 工程路徑 (*)
-set Project_Parent_Path=E:\Worksapce\Android\Command_TaylorZero-master\
+set Project_Parent_Path=E:\Worksapce\Android\TaylorZero_CHS\
 set Project_Path=%Project_Parent_Path%%Project_Name%
 :: (*) 工程內部所用路徑 (*)
 set ProjectInner_Path=com\android\%ProjectPackage_Last_Name%
