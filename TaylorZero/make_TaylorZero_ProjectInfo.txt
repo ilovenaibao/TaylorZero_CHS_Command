@@ -1,0 +1,21 @@
+---------------------- 
+Total infomation:    * 
+---------------------- 
+*************Project Info*************************************** 
+Project path   : G:\no_eclipse_build\Projects\TaylorZero_Projectes\TaylorZero 
+Project Name   : TaylorZero 
+Package Name   : com.android.taylorzero 
+add-ons        : 39 
+keystore       : TaylorZero.keystore 
+keystore pass  : taylorzero 
+keystore main pass: taylorzero 
+Validity Days  : 20000 
+*************Apk's Info***************************************** 
+apk's Name     : .\bin\TaylorZero.apk 
+apk's Path     : G:\no_eclipse_build\Projects\TaylorZero_Projectes\TaylorZero\.\bin\TaylorZero.apk 
+*************Developer Info************************************* 
+Developer Name : Gu 
+Company Name   : "TaylorGu_Co." 
+Organization   : home 
+Country ID     : CN 
+*************END************************************************ 

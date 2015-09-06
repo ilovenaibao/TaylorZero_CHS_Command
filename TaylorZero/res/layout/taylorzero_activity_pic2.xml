@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/pic_ui_bg"
+    android:orientation="vertical" >
+
+    <Gallery
+        android:id="@+id/mygallery"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:fadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="50dp" />
+
+    <ImageView
+        android:id="@+id/volume_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/open_volume" />
+
+    <ImageView
+        android:id="@+id/dir_list_imgbt"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/close_folders" />
+
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_above="@id/dir_list_imgbt"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/dirlistwindow_border_select" >
+
+        <FrameLayout
+            android:id="@+id/test_bed"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <!-- We will add the DSLVFragment inside the FrameLayout in code -->
+    </LinearLayout>
+
+</RelativeLayout>

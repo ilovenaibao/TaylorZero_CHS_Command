@@ -1,0 +1,370 @@
+<NotepadPlus>
+    <Project name="TaylorZeroPrj">
+        <Folder name="TaylorZero">
+            <Folder name="assets">
+                <Folder name="font">
+                    <File name="TaylorZero\assets\font\cn_test.ttf" />
+                    <File name="TaylorZero\assets\font\SIMKAI.TTF" />
+                </Folder>
+            </Folder>
+            <Folder name="lib_proj">
+                <Folder name="dslv_library">
+                    <Folder name="libs">
+                        <File name="TaylorZero\lib_proj\dslv_library\libs\android-support-v4.jar" />
+                    </Folder>
+                    <Folder name="res">
+                        <Folder name="drawable">
+                            <File name="TaylorZero\lib_proj\dslv_library\res\drawable\chose_morlist.xml" />
+                            <File name="TaylorZero\lib_proj\dslv_library\res\drawable\exit_button_down.xml" />
+                            <File name="TaylorZero\lib_proj\dslv_library\res\drawable\exit_button_up.xml" />
+                            <File name="TaylorZero\lib_proj\dslv_library\res\drawable\view_yuan_morelist.xml" />
+                        </Folder>
+                        <Folder name="layout">
+                            <File name="TaylorZero\lib_proj\dslv_library\res\layout\selectversion.xml" />
+                        </Folder>
+                        <Folder name="values">
+                            <File name="TaylorZero\lib_proj\dslv_library\res\values\dslv_attrs.xml" />
+                            <File name="TaylorZero\lib_proj\dslv_library\res\values\dslv_color.xml" />
+                            <File name="TaylorZero\lib_proj\dslv_library\res\values\dslv_strings.xml" />
+                            <File name="TaylorZero\lib_proj\dslv_library\res\values\dslv_styles.xml" />
+                        </Folder>
+                    </Folder>
+                    <Folder name="src">
+                        <Folder name="com">
+                            <Folder name="besta">
+                                <Folder name="app">
+                                    <Folder name="removedialog">
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\besta\app\removedialog\RemoveItemDialog.java" />
+                                    </Folder>
+                                </Folder>
+                            </Folder>
+                            <Folder name="mobeta">
+                                <Folder name="android">
+                                    <Folder name="dslv">
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\mobeta\android\dslv\DragSortController.java" />
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\mobeta\android\dslv\DragSortCursorAdapter.java" />
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\mobeta\android\dslv\DragSortItemView.java" />
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\mobeta\android\dslv\DragSortItemViewCheckable.java" />
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\mobeta\android\dslv\DragSortListView.java" />
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\mobeta\android\dslv\MyRefreshListViewCaller.java" />
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\mobeta\android\dslv\ResourceDragSortCursorAdapter.java" />
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\mobeta\android\dslv\SimpleDragSortCursorAdapter.java" />
+                                        <File name="TaylorZero\lib_proj\dslv_library\src\com\mobeta\android\dslv\SimpleFloatViewManager.java" />
+                                    </Folder>
+                                </Folder>
+                            </Folder>
+                        </Folder>
+                    </Folder>
+                    <File name="TaylorZero\lib_proj\dslv_library\.gitignore" />
+                    <File name="TaylorZero\lib_proj\dslv_library\AndroidManifest.xml" />
+                    <File name="TaylorZero\lib_proj\dslv_library\ant.properties" />
+                    <File name="TaylorZero\lib_proj\dslv_library\build.xml" />
+                    <File name="TaylorZero\lib_proj\dslv_library\dslv_library.iml" />
+                    <File name="TaylorZero\lib_proj\dslv_library\pom.xml" />
+                    <File name="TaylorZero\lib_proj\dslv_library\proguard-project.txt" />
+                    <File name="TaylorZero\lib_proj\dslv_library\project.properties" />
+                </Folder>
+                <Folder name="My_Static_Method_Lib">
+                    <Folder name="res">
+                        <Folder name="layout">
+                            <File name="TaylorZero\lib_proj\My_Static_Method_Lib\res\layout\my_static_method_lib_dragpapers_scrolllayout.xml" />
+                            <File name="TaylorZero\lib_proj\My_Static_Method_Lib\res\layout\my_static_method_lib_error_printf_view.xml" />
+                            <File name="TaylorZero\lib_proj\My_Static_Method_Lib\res\layout\my_static_method_lib_loading_view_1.xml" />
+                            <File name="TaylorZero\lib_proj\My_Static_Method_Lib\res\layout\my_static_method_lib_media_mp4_view.xml" />
+                        </Folder>
+                        <Folder name="values">
+                            <File name="TaylorZero\lib_proj\My_Static_Method_Lib\res\values\my_static_method_lib_strings.xml" />
+                        </Folder>
+                    </Folder>
+                    <Folder name="src">
+                        <Folder name="com">
+                            <Folder name="android">
+                                <Folder name="mylib">
+                                    <Folder name="dbtypeconvert">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\dbtypeconvert\MyDBTypeConvert.java" />
+                                    </Folder>
+                                    <Folder name="dragpapers">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\dragpapers\MyDragPapersScrollLayout.java" />
+                                    </Folder>
+                                    <Folder name="exceptioninfo">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\exceptioninfo\MyErrorPrintfActivity.java" />
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\exceptioninfo\MyExceptionInfo.java" />
+                                    </Folder>
+                                    <Folder name="graphic">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\graphic\MyGraphic.java" />
+                                    </Folder>
+                                    <Folder name="loadingview">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\loadingview\MyLoadingView.java" />
+                                    </Folder>
+                                    <Folder name="loginfo">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\loginfo\MyLogInfo.java" />
+                                    </Folder>
+                                    <Folder name="media">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\media\PlayMediaTime.java" />
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\media\PlayMp3Class.java" />
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\media\PlayMp4Class.java" />
+                                    </Folder>
+                                    <Folder name="network">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\network\MyWifiInfo.java" />
+                                    </Folder>
+                                    <Folder name="screen">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\screen\MyLibScreenInfo.java" />
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\screen\MyLibScreenSetting.java" />
+                                    </Folder>
+                                    <Folder name="staticmethod">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\staticmethod\My_Static_Method_Lib.java" />
+                                    </Folder>
+                                    <Folder name="xscan">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\xscan\FileTypeFilter.java" />
+                                    </Folder>
+                                </Folder>
+                            </Folder>
+                        </Folder>
+                    </Folder>
+                    <File name="TaylorZero\lib_proj\My_Static_Method_Lib\AndroidManifest.xml" />
+                    <File name="TaylorZero\lib_proj\My_Static_Method_Lib\my_static_lib_describe.txt" />
+                    <File name="TaylorZero\lib_proj\My_Static_Method_Lib\My_Static_Method_Lib.iml" />
+                    <File name="TaylorZero\lib_proj\My_Static_Method_Lib\proguard-project.txt" />
+                    <File name="TaylorZero\lib_proj\My_Static_Method_Lib\project.properties" />
+                    <File name="TaylorZero\lib_proj\My_Static_Method_Lib\README.md" />
+                </Folder>
+            </Folder>
+            <Folder name="libs">
+                <File name="TaylorZero\libs\android-support-v4.jar" />
+            </Folder>
+            <Folder name="res">
+                <Folder name="anim">
+                    <File name="TaylorZero\res\anim\dir_list_window_in.xml" />
+                    <File name="TaylorZero\res\anim\dir_list_window_out.xml" />
+                    <File name="TaylorZero\res\anim\era_popwindow_in.xml" />
+                    <File name="TaylorZero\res\anim\era_popwindow_out.xml" />
+                    <File name="TaylorZero\res\anim\popwindow_in.xml" />
+                    <File name="TaylorZero\res\anim\popwindow_out.xml" />
+                </Folder>
+                <Folder name="drawable">
+                    <File name="TaylorZero\res\drawable\bg_handle.xml" />
+                    <File name="TaylorZero\res\drawable\bg_handle_section1.xml" />
+                    <File name="TaylorZero\res\drawable\bg_handle_section1_selector.xml" />
+                    <File name="TaylorZero\res\drawable\bg_handle_section2.xml" />
+                    <File name="TaylorZero\res\drawable\bg_handle_section2_selector.xml" />
+                    <File name="TaylorZero\res\drawable\dirlistwindow_border_select.xml" />
+                    <File name="TaylorZero\res\drawable\dirlistwindow_border_un_select.xml" />
+                    <File name="TaylorZero\res\drawable\drag.png" />
+                    <File name="TaylorZero\res\drawable\drag_select.png" />
+                    <File name="TaylorZero\res\drawable\folder_yellow.png" />
+                    <File name="TaylorZero\res\drawable\gallery_border_select.xml" />
+                    <File name="TaylorZero\res\drawable\gallery_border_un_select.xml" />
+                    <File name="TaylorZero\res\drawable\play_flash_bg_color.xml" />
+                    <File name="TaylorZero\res\drawable\savedata_morlist.xml" />
+                    <File name="TaylorZero\res\drawable\save_data_loading_dlg.xml" />
+                    <File name="TaylorZero\res\drawable\section_div.xml" />
+                    <File name="TaylorZero\res\drawable\talk_select_window_morlist.xml" />
+                    <File name="TaylorZero\res\drawable\taylorzero_talk_select_window_bg.xml" />
+                    <File name="TaylorZero\res\drawable\view_yuan_morelist.xml" />
+                </Folder>
+                <Folder name="drawable-hdpi">
+                    <File name="TaylorZero\res\drawable-hdpi\application.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\bg_1.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\delete_x.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\drag.9.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\ic_dialog_info.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\start_new_activity.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\taylorzero_loading_activity.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\taylorzero_loading_activity_2.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\taylorzero_solo_dialog.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\test_app.png" />
+                    <File name="TaylorZero\res\drawable-hdpi\zero_talk_activity_icon.png" />
+                </Folder>
+                <Folder name="drawable-nodpi">
+                    <File name="TaylorZero\res\drawable-nodpi\be_generic_rgb_wo_60.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\close_folders.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\close_volume.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\ic_menu_archive.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\ic_menu_search_holo_light.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\login_activity_pic_show_next_pic.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\login_activity_pic_show_play_pic.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\login_activity_pic_show_pre_pic.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\login_activity_pic_show_stop_pic.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\login_ui.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\login_ui_old.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\numberbg.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\open_all_folders.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\open_folders.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\open_volume.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\pic_ui_bg.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\save_bg.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\skip_media_next.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\start_activity_bt_cancel.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\start_activity_bt_ok.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\taylorzero_talk_dialog_color_1.9.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\taylorzero_talk_dialog_color_2.9.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\taylorzero_talk_dialog_new_1.9.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\taylorzero_talk_dialog_new_2.9.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\taylorzero_talk_dialog_new_3.9.png_" />
+                    <File name="TaylorZero\res\drawable-nodpi\taylorzero_talk_dialog_test_1.9.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\taylorzero_talk_dialog_test_2.9.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\taylorzero_talk_select_window_list_tag.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\user_add_1.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\user_add_blue.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\zero_start_bg.png" />
+                    <File name="TaylorZero\res\drawable-nodpi\zero_talk_dialog.9.png" />
+                </Folder>
+                <Folder name="layout">
+                    <File name="TaylorZero\res\layout\dslv_dir_list_window.xml" />
+                    <File name="TaylorZero\res\layout\dslv_fragment_main.xml" />
+                    <File name="TaylorZero\res\layout\dslv_header_footer.xml" />
+                    <File name="TaylorZero\res\layout\dslv_list_item_click_remove.xml" />
+                    <File name="TaylorZero\res\layout\dslv_list_item_handle_left.xml" />
+                    <File name="TaylorZero\res\layout\launcher.xml" />
+                    <File name="TaylorZero\res\layout\launcher_item.xml" />
+                    <File name="TaylorZero\res\layout\main.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_activity_loading.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_activity_loading_list.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_activity_main.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_activity_newstart.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_activity_pic.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_activity_pic2.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_activity_pic2_gallery_imgview.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_activity_save.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_activity_solo_content.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_datacontrol_test.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_login.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_opening.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_play_video.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_start_new_layout.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_talkcontent_selectwindow.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_talkcontent_selectwindow_show.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_talkcontent_select_window_list.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_talk_dialog.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_talk_dialog3.xml" />
+                    <File name="TaylorZero\res\layout\taylorzero_talk_dialog_2.xml" />
+                    <File name="TaylorZero\res\layout\test_bed_main.xml" />
+                </Folder>
+                <Folder name="menu">
+                    <File name="TaylorZero\res\menu\main.xml" />
+                    <File name="TaylorZero\res\menu\mode_menu.xml" />
+                </Folder>
+                <Folder name="values">
+                    <File name="TaylorZero\res\values\colors.xml" />
+                    <File name="TaylorZero\res\values\dimens.xml" />
+                    <File name="TaylorZero\res\values\ids.xml" />
+                    <File name="TaylorZero\res\values\strings.xml" />
+                    <File name="TaylorZero\res\values\styles.xml" />
+                </Folder>
+                <Folder name="values-sw600dp">
+                    <File name="TaylorZero\res\values-sw600dp\dimens.xml" />
+                </Folder>
+                <Folder name="values-sw720dp-land">
+                    <File name="TaylorZero\res\values-sw720dp-land\dimens.xml" />
+                </Folder>
+                <Folder name="values-v11">
+                    <File name="TaylorZero\res\values-v11\styles.xml" />
+                </Folder>
+                <Folder name="values-v14">
+                    <File name="TaylorZero\res\values-v14\styles.xml" />
+                </Folder>
+            </Folder>
+            <Folder name="src">
+                <Folder name="com">
+                    <Folder name="android">
+                        <Folder name="taylorzero">
+                            <Folder name="content">
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroContentActivity.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroDefineTextView.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroSoloDialogActivity.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroSoloViewActivity.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroTalkActivity.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroTalkContentSelectWindow.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroTalkSelectWindowListAdapter.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroTalkSelectWindowListTextView.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroTalkSelectWindowsListOneData.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\content\TaylorZeroTalkTextView.java" />
+                            </Folder>
+                            <Folder name="login">
+                                <Folder name="loading">
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\loading\TaylorZeroLoadingActivity.java" />
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\loading\TaylorZeroLoadingListAdapter.java" />
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\loading\TaylorZeroLoadingOneData.java" />
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\loading\TaylorZeroSaveActivity.java" />
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\loading\TaylorZeroTextView.java" />
+                                </Folder>
+                                <Folder name="pic">
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\pic\MirrorView.java" />
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\pic\TaylorZeroPicActivity.java" />
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\pic\TaylorZeroPicActivity2.java" />
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\pic\TaylorZeroPicturesView.java" />
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\pic\TaylorZeroPicturesViewValues.java" />
+                                    <Folder name="popdirlist">
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\DragInitModeDialog.java" />
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\DSLVFragment.java" />
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\DSLVFragmentClicks.java" />
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\EnablesDialog.java" />
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\ListViewTest.java" />
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\MyArrayAdapter.java" />
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\MySearchDirListService.java" />
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\RemoveModeDialog.java" />
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\TaylorZeroDirListPopWindow.java" />
+                                        <File name="TaylorZero\src\com\android\taylorzero\login\pic\popdirlist\TestBedDSLV.java" />
+                                    </Folder>
+                                </Folder>
+                                <Folder name="preface">
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\preface\TaylorZeroPreFaceActivity.java" />
+                                </Folder>
+                                <Folder name="start">
+                                    <File name="TaylorZero\src\com\android\taylorzero\login\start\TaylorZeroStartActivity.java" />
+                                </Folder>
+                            </Folder>
+                            <Folder name="opening">
+                                <File name="TaylorZero\src\com\android\taylorzero\opening\TaylorZeroChosLogin.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\opening\TaylorZeroOpening.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\opening\TaylorZeroPreface.java" />
+                            </Folder>
+                            <Folder name="setting">
+                                <File name="TaylorZero\src\com\android\taylorzero\setting\TaylorZeroLoadingSetting.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\setting\TaylorZeroLoginSetting.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\setting\TaylorZeroOpeningSetting.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\setting\TaylorZeroPicActivitySetting.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\setting\TaylorZeroSetting.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\setting\TaylorZeroStartActivitySetting.java" />
+                            </Folder>
+                            <Folder name="test">
+                                <File name="TaylorZero\src\com\android\taylorzero\test\TaylorZeroDataControlTest.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\test\TaylorZeroMainActivity_Test.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\test\TestPlayMp3Class.java" />
+                                <File name="TaylorZero\src\com\android\taylorzero\test\TestPlayMp4Class.java" />
+                            </Folder>
+                            <File name="TaylorZero\src\com\android\taylorzero\TaylorZero.java" />
+                            <File name="TaylorZero\src\com\android\taylorzero\TaylorZeroBmp.java" />
+                            <File name="TaylorZero\src\com\android\taylorzero\TaylorZeroDataControl.java" />
+                            <File name="TaylorZero\src\com\android\taylorzero\TaylorZeroMainActivity.java" />
+                            <File name="TaylorZero\src\com\android\taylorzero\TaylorZeroPlayBgMp3.java" />
+                            <File name="TaylorZero\src\com\android\taylorzero\TaylorZeroPlayBgMp3CallBack.java" />
+                            <File name="TaylorZero\src\com\android\taylorzero\TaylorZeroPlayBgMp3Service.java" />
+                            <File name="TaylorZero\src\com\android\taylorzero\TaylorZeroPlayWidgetSound.java" />
+                        </Folder>
+                    </Folder>
+                </Folder>
+            </Folder>
+            <File name="TaylorZero\TaylorZero.keystore" />
+            <File name="TaylorZero\project.properties" />
+            <File name="TaylorZero\proguard-project.txt" />
+            <File name="TaylorZero\make_TaylorZero_ProjectInfo.txt" />
+            <File name="TaylorZero\build.xml" />
+            <File name="TaylorZero\ant.properties" />
+            <File name="TaylorZero\AndroidManifest.xml" />
+        </Folder>
+        <File name="apkbuilder_.bat" />
+        <File name="COMPILE_LIB_FILES" />
+        <File name="COMPILE_SOURCE_FILES" />
+        <File name="PROJECT_CREATE.bat" />
+        <File name="PROJECT_INFO_SET.bat" />
+        <File name="PROJECT_INSTALL_APK.bat" />
+        <File name="PROJECT_REBUILD.bat" />
+        <File name="PROJECT_UNINSTALL_APK.bat" />
+        <File name="README" />
+        <File name="user_create_project.bat" />
+        <File name="user_install_apk.bat" />
+        <File name="user_rebuild_project.bat" />
+        <File name="user_uninstall_apk.bat" />
+    </Project>
+</NotepadPlus>
