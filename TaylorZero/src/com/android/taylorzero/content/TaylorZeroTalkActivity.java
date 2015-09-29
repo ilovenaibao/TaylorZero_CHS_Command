@@ -90,13 +90,13 @@ public class TaylorZeroTalkActivity extends Activity {
 							.findViewById(R.id.talk_dialog_img_view));
 					ArrayList<TaylorZeroTalkSelectWindowsListOneData> listData = new ArrayList<TaylorZeroTalkSelectWindowsListOneData>();
 					TaylorZeroTalkSelectWindowsListOneData oneData = new TaylorZeroTalkSelectWindowsListOneData();
-					oneData.contentStr = "1111111111111111";
+					oneData.contentStr = "222222222222222221111111111111111";
 					listData.add(oneData);
 					oneData = new TaylorZeroTalkSelectWindowsListOneData();
-					oneData.contentStr = "22222222222222222";
+					oneData.contentStr = "22222222222222222333333333333333";
 					listData.add(oneData);
 					oneData = new TaylorZeroTalkSelectWindowsListOneData();
-					oneData.contentStr = "3333333333333333";
+					oneData.contentStr = "33333333333333334444444444444444";
 					listData.add(oneData);
 					talkContentSelectWindow.setPopWindowListContent(listData);
 					talkContentSelectWindow.setListView();
