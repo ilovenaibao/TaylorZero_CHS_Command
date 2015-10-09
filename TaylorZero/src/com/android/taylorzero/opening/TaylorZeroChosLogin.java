@@ -7,6 +7,7 @@ import android.graphics.Typeface;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.taylorzero.R;
 import com.android.taylorzero.TaylorZeroPlayWidgetSound;
@@ -17,50 +18,58 @@ import com.android.taylorzero.setting.TaylorZeroLoginSetting;
 import com.android.taylorzero.setting.TaylorZeroOpeningSetting;
 import com.android.taylorzero.setting.TaylorZeroSetting;
 
+
 public class TaylorZeroChosLogin {
+
+	public enum LOGIN_TYPE {  
+		START,
+		LOADING,
+		PIC,
+		EXIT,
+		PRE_FACE,
+		MAX_TYPE
+	}
+
 	private Context mContext = null;
-	TextView tv_login_start = null;
-	TextView tv_login_loading = null;
-	TextView tv_login_pic = null;
-	TextView tv_login_exit = null;
-	TextView tv_login_preface = null;
+	TextView[] tvLoginType = new TextView[LOGIN_TYPE.MAX_TYPE.ordinal()];
 
 	public TaylorZeroChosLogin(Context context) {
 		mContext = context;
 	}
 
 	public void initializeChosLogin() {
-		tv_login_start = (TextView) ((Activity) mContext)
-				.findViewById(R.id.login_tv_start);
-		tv_login_loading = (TextView) ((Activity) mContext)
-				.findViewById(R.id.login_tv_loading);
-		tv_login_pic = (TextView) ((Activity) mContext)
-				.findViewById(R.id.login_tv_pic);
-		tv_login_exit = (TextView) ((Activity) mContext)
-				.findViewById(R.id.login_tv_exit);
-		tv_login_preface = (TextView) ((Activity) mContext)
-				.findViewById(R.id.login_tv_preface);
+		// initialize ui for login
+		tvLoginType[LOGIN_TYPE.START.ordinal()] = (TextView) ((Activity) mContext)
+		.findViewById(R.id.login_tv_start);
+		tvLoginType[LOGIN_TYPE.LOADING.ordinal()] = (TextView) ((Activity) mContext)
+		.findViewById(R.id.login_tv_loading);
+		tvLoginType[LOGIN_TYPE.PIC.ordinal()] = (TextView) ((Activity) mContext)
+		.findViewById(R.id.login_tv_pic);
+		tvLoginType[LOGIN_TYPE.EXIT.ordinal()] = (TextView) ((Activity) mContext)
+		.findViewById(R.id.login_tv_exit);
+		tvLoginType[LOGIN_TYPE.PRE_FACE.ordinal()] = (TextView) ((Activity) mContext)
+		.findViewById(R.id.login_tv_preface);
 
-		tv_login_start.setOnClickListener(login_start_click_listener);
-		tv_login_loading.setOnClickListener(login_loading_click_listener);
-		tv_login_pic.setOnClickListener(login_pic_click_listener);
-		tv_login_exit.setOnClickListener(login_exit_click_listener);
-		tv_login_preface.setOnClickListener(login_preface_click_listener);
+		tvLoginType[LOGIN_TYPE.START.ordinal()].setOnClickListener(loginTypeListener);
+		tvLoginType[LOGIN_TYPE.LOADING.ordinal()].setOnClickListener(loginTypeListener);
+		tvLoginType[LOGIN_TYPE.PIC.ordinal()].setOnClickListener(loginTypeListener);
+		tvLoginType[LOGIN_TYPE.EXIT.ordinal()].setOnClickListener(loginTypeListener);
+		tvLoginType[LOGIN_TYPE.PRE_FACE.ordinal()].setOnClickListener(loginTypeListener);
 		// setting sound effects
-		tv_login_start.setSoundEffectsEnabled(false);
-		tv_login_loading.setSoundEffectsEnabled(false);
-		tv_login_pic.setSoundEffectsEnabled(false);
-		tv_login_exit.setSoundEffectsEnabled(false);
-		tv_login_preface.setSoundEffectsEnabled(false);
+		tvLoginType[LOGIN_TYPE.START.ordinal()].setSoundEffectsEnabled(false);
+		tvLoginType[LOGIN_TYPE.LOADING.ordinal()].setSoundEffectsEnabled(false);
+		tvLoginType[LOGIN_TYPE.PIC.ordinal()].setSoundEffectsEnabled(false);
+		tvLoginType[LOGIN_TYPE.EXIT.ordinal()].setSoundEffectsEnabled(false);
+		tvLoginType[LOGIN_TYPE.PRE_FACE.ordinal()].setSoundEffectsEnabled(false);
 
 		try {
 			Typeface font = Typeface.createFromAsset(mContext.getAssets(),
-					"font/cn_test.ttf");
-			tv_login_start.setTypeface(font, Typeface.BOLD);
-			tv_login_loading.setTypeface(font, Typeface.BOLD);
-			tv_login_pic.setTypeface(font, Typeface.BOLD);
-			tv_login_exit.setTypeface(font, Typeface.BOLD);
-			tv_login_preface.setTypeface(font, Typeface.BOLD);
+			"font/cn_test.ttf");
+			tvLoginType[LOGIN_TYPE.START.ordinal()].setTypeface(font, Typeface.BOLD);
+			tvLoginType[LOGIN_TYPE.LOADING.ordinal()].setTypeface(font, Typeface.BOLD);
+			tvLoginType[LOGIN_TYPE.PIC.ordinal()].setTypeface(font, Typeface.BOLD);
+			tvLoginType[LOGIN_TYPE.EXIT.ordinal()].setTypeface(font, Typeface.BOLD);
+			tvLoginType[LOGIN_TYPE.PRE_FACE.ordinal()].setTypeface(font, Typeface.BOLD);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -80,98 +89,95 @@ public class TaylorZeroChosLogin {
 			break;
 		}
 	}
-
-	OnClickListener login_start_click_listener = new OnClickListener() {
+	
+	OnClickListener loginTypeListener = new OnClickListener() {
 
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
-					mContext);
-			mWidgetSound
-					.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
-							+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
-			Intent intent = new Intent(mContext, TaylorZeroStartActivity.class);
-			try {
-				((Activity) mContext)
-						.startActivityForResult(
-								intent,
-								TaylorZeroLoginSetting.START_ACTIVITY_REQUESTCODE_LOGIN_START);
-			} catch (Exception e) {
-				e.printStackTrace();
+			TextView tmpV = (TextView)v;
+			if (tmpV == tvLoginType[LOGIN_TYPE.START.ordinal()]) {
+				onClickStart();
+			} else if (tmpV == tvLoginType[LOGIN_TYPE.LOADING.ordinal()]) {
+				onClickLoading();
+			} else if (tmpV == tvLoginType[LOGIN_TYPE.PIC.ordinal()]) {
+				onClickPic();
+			} else if (tmpV == tvLoginType[LOGIN_TYPE.EXIT.ordinal()]) {
+				onClickExit();
+			} else if (tmpV == tvLoginType[LOGIN_TYPE.PRE_FACE.ordinal()]) {
+				onClickPreface();
 			}
+			
 		}
 	};
 
-	OnClickListener login_loading_click_listener = new OnClickListener() {
-
-		@Override
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
-					mContext);
-			mWidgetSound
-					.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
-							+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
+	private void onClickStart() {
+		TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
+		mContext);
+		mWidgetSound
+		.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
+		+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
+		Intent intent = new Intent(mContext, TaylorZeroStartActivity.class);
+		try {
+			((Activity) mContext)
+			.startActivityForResult(
+			intent,
+			TaylorZeroLoginSetting.START_ACTIVITY_REQUESTCODE_LOGIN_START);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-	};
-
-	OnClickListener login_pic_click_listener = new OnClickListener() {
-
-		@Override
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
-					mContext);
-			mWidgetSound
-					.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
-							+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
-			Intent intent = new Intent(mContext, TaylorZeroPicActivity2.class);
-			try {
-				((Activity) mContext)
-						.startActivityForResult(
-								intent,
-								TaylorZeroLoginSetting.START_ACTIVITY_REQUESTCODE_LOGIN_PIC);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+	}
+	
+	private void onClickLoading() {
+		TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
+		mContext);
+		mWidgetSound
+		.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
+		+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
+	}
+	
+	private void onClickPic() {
+		TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
+		mContext);
+		mWidgetSound
+		.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
+		+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
+		Intent intent = new Intent(mContext, TaylorZeroPicActivity2.class);
+		try {
+			((Activity) mContext)
+			.startActivityForResult(
+			intent,
+			TaylorZeroLoginSetting.START_ACTIVITY_REQUESTCODE_LOGIN_PIC);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-	};
-
-	OnClickListener login_exit_click_listener = new OnClickListener() {
-
-		@Override
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
-					mContext);
-			mWidgetSound
-					.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
-							+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
-			((Activity) mContext).finish();
+	}
+	
+	private void onClickExit() {
+		TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
+		mContext);
+		mWidgetSound
+		.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
+		+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
+		((Activity) mContext).finish();
+	}
+	
+	private void onClickPreface() {
+		TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
+		mContext);
+		mWidgetSound
+		.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
+		+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
+		Intent intent = new Intent(mContext,
+		TaylorZeroPreFaceActivity.class);
+		try {
+			((Activity) mContext)
+			.startActivityForResult(
+			intent,
+			TaylorZeroLoginSetting.START_ACTIVITY_REQUESTCODE_LOGIN_PREFACE);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-	};
+	}
 
-	OnClickListener login_preface_click_listener = new OnClickListener() {
-
-		@Override
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			TaylorZeroPlayWidgetSound mWidgetSound = new TaylorZeroPlayWidgetSound(
-					mContext);
-			mWidgetSound
-					.playWidgetSoundMp3(TaylorZeroSetting.Zero_Data_Real_Path
-							+ TaylorZeroOpeningSetting.click_start_ui_activity_mp3_path);
-			Intent intent = new Intent(mContext,
-					TaylorZeroPreFaceActivity.class);
-			try {
-				((Activity) mContext)
-						.startActivityForResult(
-								intent,
-								TaylorZeroLoginSetting.START_ACTIVITY_REQUESTCODE_LOGIN_PREFACE);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	};
 }

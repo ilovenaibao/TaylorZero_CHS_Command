@@ -93,6 +93,9 @@
                                     <Folder name="graphic">
                                         <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\graphic\MyGraphic.java" />
                                     </Folder>
+                                    <Folder name="io">
+                                        <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\io\SdIO.java" />
+                                    </Folder>
                                     <Folder name="loadingview">
                                         <File name="TaylorZero\lib_proj\My_Static_Method_Lib\src\com\android\mylib\loadingview\MyLoadingView.java" />
                                     </Folder>

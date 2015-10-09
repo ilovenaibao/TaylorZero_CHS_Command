@@ -56,6 +56,7 @@ public class TaylorZeroMainActivity extends Activity {
 		// TODO Auto-generated method stub
 		if (null != opening) {
 			opening.doDestroy();
+			opening = null;
 		}
 		super.onDestroy();
 	}

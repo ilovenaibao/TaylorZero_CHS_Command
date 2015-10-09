@@ -30,7 +30,7 @@ public class TaylorZeroOpening {
 	TextView mp4_show_caption = null;
 	LinearLayout mLayout_start_new_layout_animation = null;
 	ImageView animation_imgView = null;
-	/* 创建VideoView对象 */
+	/* create VideoView obj */
 	private VideoView videoView = null;
 	private boolean isPlaying_pre = false;
 	private int playingSeekTo = 0;
@@ -71,7 +71,7 @@ public class TaylorZeroOpening {
 		}
 		videoView = (VideoView) ((Activity) mContext)
 				.findViewById(R.id.opening_video_view);
-		/* 设置路径 */
+		/* set path */
 		videoView.setVideoPath(mp4_path);
 		videoView.setOnCompletionListener(video_complete_listener);
 		// MediaController video_controller = new MediaController(mContext);
